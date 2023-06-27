@@ -28,6 +28,7 @@ class PrincipalPage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomMenu(),
+    
     );
   }
 }
