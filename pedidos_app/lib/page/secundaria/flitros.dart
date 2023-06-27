@@ -13,7 +13,7 @@ class Filtros extends StatelessWidget {
              SizedBox(width: 16),
               IconButton(
               onPressed: (){},
-              icon: Icon( Icons.tune_outlined, size: 35,)
+              icon: Icon( Icons.tune_outlined, size: 25,)
               ),
           Container(
             width: 90,

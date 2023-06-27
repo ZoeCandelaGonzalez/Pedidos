@@ -14,8 +14,9 @@ class SecundariaPage extends StatelessWidget {
     return Scaffold(
       body: ListView(
         children: [
+          Spacer(),
           BuscadorRestaurantes(), 
-          Filtros(),
+      Filtros(),
   ] )
       );
   }
