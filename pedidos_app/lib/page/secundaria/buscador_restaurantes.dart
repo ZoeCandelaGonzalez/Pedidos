@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:pedidos_app/page/principal/principal_page.dart';
 
 class BuscadorRestaurantes extends StatelessWidget {
   @override
@@ -10,17 +12,18 @@ class BuscadorRestaurantes extends StatelessWidget {
           margin: EdgeInsets.only(top: 20),
           width: double.infinity,
           decoration: BoxDecoration(
-            color: Colors.red,
+        
             borderRadius: BorderRadius.circular(4),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconButton(
-                onPressed: () {},
+                
+                 onPressed: () => GoRouter.of(context).go('/principalpage'),
                 icon: Icon(
                   Icons.chevron_left_outlined,
-                  color: Colors.black,
+                  color: Colors.black, size: 40,
                 ),
               ),
               Expanded(

@@ -12,13 +12,14 @@ class Filtros extends StatelessWidget {
         children: [
              SizedBox(width: 16),
               IconButton(
+                color: Colors.black,
               onPressed: (){},
               icon: Icon( Icons.tune_outlined, size: 25,)
               ),
           Container(
-            width: 90,
-            height: 150,
-            color: Colors.white,
+            width:110,
+            height: 60,
+         
             
               
               child: Column(
@@ -43,7 +44,7 @@ class Filtros extends StatelessWidget {
           Container(
             width: 110,
             height: 60,
-            color: Colors.white,
+       
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -63,7 +64,7 @@ class Filtros extends StatelessWidget {
           Container(
             width: 110,
             height:60,
-            color: Colors.white,
+        
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

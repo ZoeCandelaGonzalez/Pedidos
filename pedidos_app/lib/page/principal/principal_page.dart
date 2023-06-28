@@ -16,8 +16,9 @@ class PrincipalPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
+        
         children: [
-          Encabezado(),
+          const Encabezado(),
           BuscarLocales(),
           Sumate(),
           PantallaPrincipal(),

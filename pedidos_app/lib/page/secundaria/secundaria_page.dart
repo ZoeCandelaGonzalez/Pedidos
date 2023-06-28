@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 
+
 import 'buscador_restaurantes.dart';
 import 'flitros.dart';
+import 'listarestaurantes.dart';
 
 
 
@@ -16,7 +18,9 @@ class SecundariaPage extends StatelessWidget {
         children: [
           Spacer(),
           BuscadorRestaurantes(), 
-      Filtros(),
+          Filtros(),
+         
+    
   ] )
       );
   }

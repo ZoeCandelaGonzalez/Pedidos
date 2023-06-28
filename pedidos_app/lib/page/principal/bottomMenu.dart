@@ -1,10 +1,13 @@
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:pedidos_app/page/secundaria/secundaria_page.dart';
+
 
 
 
 class BottomMenu extends StatelessWidget {
+  const BottomMenu({super.key});
+
 
 
   @override
@@ -17,32 +20,22 @@ class BottomMenu extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           IconButton(
-            icon: Icon(Icons.home),
-            onPressed: () {
-             final route = MaterialPageRoute
-             (builder: (context) => SecundariaPage() );
-             Navigator.push(context, route);
-            },
+            icon: const Icon(Icons.home),
+           onPressed: () => GoRouter.of(context).go('/secundariapage')
           ),
           IconButton(
             
-            icon: Icon(Icons.support_outlined),
-            onPressed: () {
-
-    
-            },
-          ),
-          IconButton(
-            icon: Icon(Icons.support_outlined),
-            onPressed: () {
+            icon: const Icon(Icons.support_outlined),
             
-            },
+             onPressed: () => GoRouter.of(context).go('/secundariapage')
           ),
           IconButton(
-            icon: Icon(Icons.person_outline),
-            onPressed: () {
-              // Acción al presionar el ícono de perfil
-            },
+            icon: const Icon(Icons.support_outlined),
+            onPressed: () => GoRouter.of(context).go('/secundariapage'),
+          ),
+          IconButton(
+            icon: const Icon(Icons.person_outline),
+              onPressed: () => GoRouter.of(context).go('/secundariapage')
           ),
         ],
       ),
