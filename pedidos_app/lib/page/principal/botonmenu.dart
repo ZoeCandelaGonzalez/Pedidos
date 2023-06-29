@@ -6,7 +6,7 @@ import '../../bloc/bottom_navigation_bloc.dart';
 List <BottomNavigationBarItem> bottomNavItems = const <BottomNavigationBarItem>[
 
   BottomNavigationBarItem(
-    icon: Icon(Icons.house),
+    icon: Icon(Icons.home),
     label: 'Inicio', 
     
   ),      
@@ -43,7 +43,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
           child: BottomNavigationBar(
             items: bottomNavItems,
             currentIndex: state.index,
-            selectedItemColor: Colors.black,
+            selectedItemColor: Colors.pink,
             unselectedItemColor: Colors.grey,
             onTap: (value) {
               BlocProvider.of<BottomNavigationBloc>(context)

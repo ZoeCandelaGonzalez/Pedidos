@@ -17,11 +17,11 @@ class PantallaPrincipal extends StatelessWidget {
         children: [
           Container(
             width: 130,
-            height: 210,
+            height: 250,
             margin: const EdgeInsets.only(right: 24),
             decoration: BoxDecoration(
               color: Colors.yellow,
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(20),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -36,8 +36,8 @@ class PantallaPrincipal extends StatelessWidget {
                 ),
                 Image.asset(
                   'assets/hamburguesa.jpg',
-                  width: 80,
-                  height: 80,
+                  width: 200,
+                  height: 200,
                 ),
                 const SizedBox(height: 8),
               ],
@@ -45,33 +45,35 @@ class PantallaPrincipal extends StatelessWidget {
           ),
           Expanded(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+         
               children: [
                 Container(
                   width: double.infinity,
-                  height: 120,
+                  height: 130,
                   margin: const EdgeInsets.only(bottom: 16),
                   decoration: BoxDecoration(
                     color: Colors.pink,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text(
+                         Text(
                         'PedidosYaMarket',
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
+                       
                       ),
+                    
                       Image.asset(
                         'assets/pedidosyamarket.png',
-                        width: 50,
-                        height: 50,
+                        width: 70,
+                        height: 90,
                       ),
-                      const SizedBox(height: 8),
+                    
                     ],
                   ),
                 ),
@@ -79,12 +81,14 @@ class PantallaPrincipal extends StatelessWidget {
                   children: [
                     Expanded(
                       child: Container(
+                       
+                        height: 100,
                         decoration: BoxDecoration(
                           color: const Color.fromARGB(255, 115, 204, 246),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
                               'Mercados',
@@ -96,8 +100,9 @@ class PantallaPrincipal extends StatelessWidget {
                             ),
                             Image.asset(
                               'assets/mercado.png',
-                              width: 50,
-                              height: 50,
+                              
+                          
+                              height: 60,
                             ),
                             SizedBox(height: 8),
                           ],
@@ -107,24 +112,30 @@ class PantallaPrincipal extends StatelessWidget {
                     SizedBox(width: 16),
                     Expanded(
                       child: Container(
+                         width: 100,
+                        height: 100,
                         decoration: BoxDecoration(
                           color: Color.fromARGB(255, 237, 169, 199),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          
+                          
+
                           children: [
-                            SizedBox(height: 8),
+                         
                             Text(
                               'Helados',
                               style: TextStyle(
                                 color: Colors.black,
+                                fontWeight: FontWeight.bold,
                                 fontSize: 16,
                               ),
                             ),
                             Image.asset(
                               'assets/helados.png',
-                              width: 50,
+                              width: 150,
                               height: 50,
                             ),
                             SizedBox(height: 8),

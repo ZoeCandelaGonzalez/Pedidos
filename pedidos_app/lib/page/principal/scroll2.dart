@@ -17,9 +17,10 @@ class Scroller2 extends StatelessWidget {
                 SizedBox(width: 16),
        
           //desayuna como campeon
-            Container(
+            SizedBox(
       width: 400,
       height: 200,
+
      
       child: Column(
       children: [
@@ -35,6 +36,7 @@ class Scroller2 extends StatelessWidget {
           child: Container(
             width: 400,
             height:200,
+            
             child: Image.asset(
               'assets/desayuna.jpeg',
               fit: BoxFit.cover,
@@ -49,6 +51,7 @@ class Scroller2 extends StatelessWidget {
             Container(
               width: 300,
               height: 200,
+           
           
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -68,7 +71,7 @@ class Scroller2 extends StatelessWidget {
             height:100,
             child: Image.asset(
               'assets/chipa.jpg',
-              fit: BoxFit.cover,
+             
             ),
           ),
         ),
