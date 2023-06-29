@@ -4,15 +4,17 @@ import '../page/principal/principal_page.dart';
 import '../page/secundaria/secundaria_page.dart';
 
 final appRouter = GoRouter(
-initialLocation: '/principalpage',
+initialLocation: '/principal_page.dart',
 routes: [ 
 
-GoRoute(
-  path: '/principalpage', 
-  builder: (context, state) => const PrincipalPage() ),
+ GoRoute(
+      path: '/principal_page.dart',
+     
+      builder: (context, state) => const PrincipalPage(),
+    ),
 
   GoRoute(
-  path: '/secundariapage', 
+  path: '/secundaria_page.dart', 
   builder: (context, state) => SecundariaPage() ),
 
 ]

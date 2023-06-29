@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 
-class ContainerListWidget extends StatelessWidget {
+class ListaRestaurantes extends StatelessWidget {
   final List<Color> colors = [
     Colors.white,
     Colors.white,
@@ -28,21 +28,21 @@ class ContainerListWidget extends StatelessWidget {
   ];
 
   final List<String> subtitles = [
-    '10 - 25 min · Envio',
-    '10 - 25 min · Envio',
-    '10 - 25 min · Envio',
-    '10 - 25 min · Envio',
-    '10 - 25 min · Envio',
-    '10 - 25 min · Envio',
-    '10 - 25 min · Envio',
-    '10 - 25 min · Envio',
-    '10 - 25 min · Envio',
-    '10 - 25 min · Envio',
+    '10 - 25 min · Envío',
+    '10 - 25 min · Envío',
+    '10 - 25 min · Envío',
+    '10 - 25 min · Envío',
+    '10 - 25 min · Envío',
+    '10 - 25 min · Envío',
+    '10 - 25 min · Envío',
+    '10 - 25 min · Envío',
+    '10 - 25 min · Envío',
+    '10 - 25 min · Envío',
   ];
 
   final List<double> ratings = [
     4.5,
-    3.8,
+     3.8,
     4.2,
     4.0,
     3.5,
@@ -79,9 +79,12 @@ class ContainerListWidget extends StatelessWidget {
     'assets/ibrikcafe.jpg',
   ];
 
+  ListaRestaurantes({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       body: ListView.builder(
         itemCount: colors.length,
         itemBuilder: (context, index) {
@@ -93,13 +96,13 @@ class ContainerListWidget extends StatelessWidget {
           final imagePath = imagePaths[index];
 
           return Container(
-            height: 110,
-            color: color,
+            height: 90,
+            
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: [
                 ClipRRect(
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(50),
                   child: Container(
                     width: 80,
                     height: 80,
@@ -107,7 +110,7 @@ class ContainerListWidget extends StatelessWidget {
                     child: Image.asset(imagePath),
                   ),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 Expanded(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -121,10 +124,10 @@ class ContainerListWidget extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                       const SizedBox(height: 2),
+                      const SizedBox(height: 2),
                       Text(
                         subtitle,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.black,
                           fontSize: 12,
                         ),
@@ -135,26 +138,26 @@ class ContainerListWidget extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.star,
                       color: Colors.amber,
-                      size: 15,
+                      size: 25,
                     ),
-                    SizedBox(width: 2),
-                    Text(
+                  Text(
                       rating.toString(),
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.black,
                         fontSize: 10,
                       ),
                     ),
+                    
                     Row(
                       children: [
                         for (var icon in iconList)
                           Icon(
                             icon,
                             color: Colors.black,
-                            size: 16,
+                            size: 20,
                           ),
                         SizedBox(height: 2),
                       ],

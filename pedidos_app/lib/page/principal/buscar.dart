@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BuscarLocales extends StatelessWidget {
+  const BuscarLocales({super.key});
+
 
 
  @override
@@ -8,16 +10,16 @@ Widget build(BuildContext context) {
   return Padding(
     padding: const EdgeInsets.symmetric(horizontal: 30),
     child: Container(
-      margin: EdgeInsets.only(top: 10),
+      margin: const EdgeInsets.only(top: 10),
       width: double.infinity,
-      decoration: BoxDecoration(
-        color: Colors.grey[200],
-        borderRadius: BorderRadius.circular(4),
-      ),
+        decoration: BoxDecoration(
+        
+            borderRadius: BorderRadius.circular(4),
+          ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          Expanded(
+          const Expanded(
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Buscar Locales',
@@ -25,19 +27,19 @@ Widget build(BuildContext context) {
               ),
             ),
           ),
-          SizedBox(width: 12),
+          const SizedBox(width: 12),
           Container(
             width: 40,
             height: 40,
             decoration: BoxDecoration(
-              color: Colors.red,
+              color: Colors.pink,
               borderRadius: BorderRadius.circular(4),
             ),
             child: IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.search_outlined,
-                color: const Color.fromARGB(255, 255, 255, 255),
+                color: Color.fromARGB(255, 255, 255, 255),
               ),
             ),
           ),
