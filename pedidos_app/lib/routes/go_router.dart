@@ -15,7 +15,7 @@ routes: [
 
   GoRoute(
   path: '/secundaria_page.dart', 
-  builder: (context, state) => SecundariaPage() ),
+  builder: (context, state) => const SecundariaPage() ),
 
 ]
  );

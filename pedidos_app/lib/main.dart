@@ -1,10 +1,7 @@
-import 'package:bloc/bloc.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pedidos_app/page/principal/principal_page.dart';
-import 'package:pedidos_app/page/secundaria/secundaria_page.dart';
 import 'package:pedidos_app/routes/go_router.dart';
-
 import 'bloc/bottom_navigation_bloc.dart';
 
 
@@ -31,7 +28,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
     
-    ));
+    )
+    );
   }
 }
 

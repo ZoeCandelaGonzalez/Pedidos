@@ -20,7 +20,7 @@ class Scroller extends StatelessWidget {
              width: 200,
               height: 110,
             decoration: BoxDecoration(
-                color: Colors.grey,
+             
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Padding(
@@ -30,7 +30,7 @@ class Scroller extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   
                   children: [
-                    Text(
+                    const Text(
                       'Cafe & Deli',
                       style: TextStyle(
                         fontSize: 15,
@@ -44,6 +44,7 @@ class Scroller extends StatelessWidget {
                         'assets/cafe.png',
                          width: 90,
                 height: 50,
+                fit: BoxFit.scaleDown,
                       ),
                     ),
                   
@@ -51,12 +52,13 @@ class Scroller extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(width: 16),
+            const SizedBox(width: 16),
               Container(
               width: 200,
               height: 110,
+              
             decoration: BoxDecoration(
-               color: Colors.grey,
+          
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Padding(
@@ -65,7 +67,7 @@ class Scroller extends StatelessWidget {
                 child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Retiro en local',
                     style: TextStyle(
                       fontSize: 15,
@@ -73,29 +75,32 @@ class Scroller extends StatelessWidget {
                       color: Colors.black,
                     ),
                   ),
-                  Image.asset(
-                    'assets/bolsa.png',
-                 width: 100,
-                height: 60,
+                  Positioned(
+                    child: Image.asset(
+                      'assets/bolsa.png',
+                                   width: 100,
+                                  height: 60,
+                                   fit: BoxFit.fitWidth,
+                    ),
                   ),
-                  SizedBox(height: 8),
+                  const SizedBox(height: 8),
                 ],
               ),
             ),
               ),
-            SizedBox(width: 16),
+            const SizedBox(width: 16),
          Container(
               width: 200,
               height: 110,
             decoration: BoxDecoration(
-            color: Colors.grey,
+         
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    'Kiosko',
+                  const Text(
+                    'Kioscos',
                     style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
@@ -107,12 +112,13 @@ class Scroller extends StatelessWidget {
                     width: 100,
                 height: 60,
                   ),
-                  SizedBox(height: 8),
+                  const SizedBox(height: 8),
                 ],
               ),
             ),
        
-            ])
+            ]
+            )
       ),
     );
   }

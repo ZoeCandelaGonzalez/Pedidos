@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
    Widget build(BuildContext context) {
     return BlocProvider(
       create: ( _ ) => BottomNavigationBloc(),
-      child: PrincipalPage()
+      child: const PrincipalPage()
 
     );
    }

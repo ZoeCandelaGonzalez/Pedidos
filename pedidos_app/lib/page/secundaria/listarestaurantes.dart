@@ -71,12 +71,13 @@ class ListaRestaurantes extends StatelessWidget {
     'assets/Patisserie.jpeg',
     'assets/pandequeso.jpeg',
     'assets/mccafe.jpg',
+    'assets/ibrikcafe.jpg',
     'assets/donarmando.png',
     'assets/Patisserie.jpeg',
     'assets/pandequeso.jpeg',
     'assets/mccafe.jpg',
     'assets/ibrikcafe.jpg',
-    'assets/ibrikcafe.jpg',
+    
   ];
 
   ListaRestaurantes({super.key});
@@ -88,7 +89,6 @@ class ListaRestaurantes extends StatelessWidget {
       body: ListView.builder(
         itemCount: colors.length,
         itemBuilder: (context, index) {
-          final color = colors[index];
           final title = titles[index];
           final subtitle = subtitles[index];
           final iconList = iconData[index];
@@ -98,7 +98,7 @@ class ListaRestaurantes extends StatelessWidget {
           return Container(
             height: 90,
             
-            padding: EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: [
                 ClipRRect(
@@ -159,7 +159,7 @@ class ListaRestaurantes extends StatelessWidget {
                             color: Colors.black,
                             size: 20,
                           ),
-                        SizedBox(height: 2),
+                        const SizedBox(height: 2),
                       ],
                     ),
                   ],

@@ -20,7 +20,7 @@ List <BottomNavigationBarItem> bottomNavItems = const <BottomNavigationBarItem>[
   ),
       
   BottomNavigationBarItem(
-    icon: Icon(Icons.people),
+    icon: Icon(Icons.account_circle),
     label: 'Mi Perfil' 
   ),
 

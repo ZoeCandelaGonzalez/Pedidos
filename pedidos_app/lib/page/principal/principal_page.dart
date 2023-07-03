@@ -17,7 +17,7 @@ class PrincipalPage extends StatelessWidget {
     return Scaffold(
       body: ListView(
         
-        children: [
+        children: const [
           Encabezado(),
           BuscarLocales(),
           Sumate(),
@@ -32,7 +32,7 @@ class PrincipalPage extends StatelessWidget {
       
    
 
-  bottomNavigationBar: CustomBottomNavigationBar(),    
+  bottomNavigationBar: const CustomBottomNavigationBar(),    
     );
   }
 }

@@ -20,8 +20,8 @@ class SecundariaPage extends StatelessWidget {
       body:Column(
         children: [
        
-           BuscadorRestaurantes(), 
-         Filtros(),
+           const BuscadorRestaurantes(), 
+         const Filtros(),
 
           Expanded
           (child:  

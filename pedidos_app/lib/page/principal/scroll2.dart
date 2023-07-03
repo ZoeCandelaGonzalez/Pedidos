@@ -14,7 +14,7 @@ class Scroller2 extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         child: Row(
           children: [
-                SizedBox(width: 16),
+                const SizedBox(width: 16),
        
           //desayuna como campeon
             SizedBox(
@@ -24,7 +24,7 @@ class Scroller2 extends StatelessWidget {
      
       child: Column(
       children: [
-        Text(
+        const Text(
           '',
           style: TextStyle(
             fontSize: 24,
@@ -33,13 +33,14 @@ class Scroller2 extends StatelessWidget {
           ),
         ),
         Expanded(
-          child: Container(
+          child: SizedBox(
             width: 400,
-            height:200,
+            height:00,
             
             child: Image.asset(
               'assets/desayuna.jpeg',
               fit: BoxFit.cover,
+              height: 20,
             ),
           ),
         ),
@@ -48,15 +49,15 @@ class Scroller2 extends StatelessWidget {
     ),
     
           
-            Container(
-              width: 300,
+            SizedBox(
+              width: 400,
               height: 200,
            
           
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     '',
                     style: TextStyle(
                       fontSize: 24,
@@ -66,19 +67,20 @@ class Scroller2 extends StatelessWidget {
                     
                   ), 
                    Expanded(
-          child: Container(
+          child: SizedBox(
             width: 400,
             height:100,
             child: Image.asset(
               'assets/chipa.jpg',
-             
+             height: 200,
+             width: 300,
             ),
           ),
         ),
                 ],
               ),
             ),
-            SizedBox(width: 16),
+            const SizedBox(width: 16),
                
           ],
         ),

@@ -6,14 +6,12 @@ class Sumate extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const _IconoSumate();
+    return _IconoSumate();
   }
 }
 
 class _IconoSumate extends StatelessWidget {
-  const _IconoSumate({
-    super.key,
-  });
+
 
   @override
   Widget build(BuildContext context) {
@@ -27,13 +25,13 @@ class _IconoSumate extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 15),
             width: double.infinity,
             height: 100,
-            margin: EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
             decoration: BoxDecoration(
                 color: Colors.purple,
                 boxShadow: <BoxShadow>[
                   BoxShadow(
                       color: Colors.black.withOpacity(0.2),
-                      offset: Offset(4, 6),
+                      offset: const Offset(4, 6),
                       blurRadius: 10)
                 ],
                 borderRadius: BorderRadius.circular(15),
@@ -65,7 +63,9 @@ class _IconoSumate extends StatelessWidget {
             height: 30,
             child: Image(
                 image: AssetImage(
-                    'assets/LOGO_Pedidos_Ya_PLUS_reducido_dae3e50ed1.png')),
+                    'assets/LOGO_Pedidos_Ya_PLUS_reducido_dae3e50ed1.png'
+                    )
+                    ),
           ),
           Positioned(
             right: 20,

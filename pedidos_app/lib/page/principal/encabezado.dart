@@ -19,26 +19,26 @@ class Encabezado extends StatelessWidget {
         top: true,
         bottom: false,
         child: Padding(
-          padding:EdgeInsets.symmetric(horizontal: 30),
+          padding:const EdgeInsets.symmetric(horizontal: 30),
           child: Container(
-            margin: EdgeInsets.only(top: 30),
+            margin: const EdgeInsets.only(top: 30),
             width: double.infinity,
            child: Row(
             children: [
              
-             Text('San Martin 776', style: TextStyle( fontSize: 25, fontWeight: FontWeight.w500),),
+             const Text('San Martin 776', style: TextStyle( fontSize: 25, fontWeight: FontWeight.w500),),
           
                IconButton(
                 onPressed: (){},
-                icon: Icon( Icons.expand_more_outlined, size: 35,)
+                icon: const Icon( Icons.expand_more_outlined, size: 35,)
                 ),
     
     
-             Spacer(), 
+             const Spacer(), 
     
                IconButton(
                 onPressed: (){},
-                icon: Icon(  Icons.campaign_outlined, size: 35,)
+                icon: const Icon(  Icons.campaign_outlined, size: 35,)
                 ),
     
             
